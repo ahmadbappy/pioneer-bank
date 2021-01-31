@@ -1,0 +1,39 @@
+/* Universal CSS */
+body {
+    padding: 100px;
+}
+
+
+/* CSS for ID's  */
+#transaction-area {
+    display: none;
+}
+
+
+/* CSS for Classes */
+.submit-area {
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(216, 214, 214, 0.37);
+}
+
+.deposit {
+
+    background-color: slateblue;
+}
+
+.withdraw {
+    background-color: lightsalmon;
+}
+
+.balance {
+    background-color: orange;
+}
+
+.status {
+    margin: 2px 20px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
