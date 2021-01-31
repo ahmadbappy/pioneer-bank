@@ -1,4 +1,4 @@
-// login button event handler
+// login button event handler ---
 const loginBtn = document.getElementById("login");
 loginBtn.addEventListener("click", function () {
     const loginArea = document.getElementById("login-area");
@@ -7,7 +7,7 @@ loginBtn.addEventListener("click", function () {
     transactionArea.style.display = "block";
 });
 
-// deposit button event handler
+// deposit button event handler ---
 const depositBtn = document.getElementById("addDeposit");
 depositBtn.addEventListener("click", function () {
     const depositNumber = getInputNumber("depositAmount");
@@ -18,11 +18,14 @@ depositBtn.addEventListener("click", function () {
 
 });
 
-// withdraw button event handler
+// withdraw button event handler ---
 const withdrawBtn = document.getElementById("addWithdraw");
-withdrawBtn = addEventListener("click", function () {
-    const deleteAmountNumber = getInputNumber("withdrawAmount");
-    console.log(deleteAmountNumber);
+withdrawBtn.addEventListener("click", function () {
+    const withdrawNumber = getInputNumber("withdrawAmount");
+
+    updateSpanText("currentWithdraw", withdrawNumber);
+    updateSpanText("currentBalance", -1 * withdrawNumber);
+    document.getElementById("withdrawAmount").value = "";
 });
 
 function getInputNumber(id) {
